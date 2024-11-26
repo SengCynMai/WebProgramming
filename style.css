@@ -1,14 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  padding: 20px;
-  background-color: #007BFF;
-  color: white;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .intro {
+    margin-bottom: 40px;
+  }
+  
+  .featured-genres .genre-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .featured-genres .genre {
+    text-align: center;
+  }
+  
+  .featured-genres .genre img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  body.dark-mode {
+    background-color: #222;
+    color: #eee;
+  }
+  
+  body.dark-mode header {
+    background-color: #444;
+  }
+  
+  body.dark-mode footer {
+    background-color: #444;
+  }
+  
