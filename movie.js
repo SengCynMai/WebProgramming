@@ -242,7 +242,7 @@ const movies = [
     {
         title: "Coco",
         summary: "Aspiring musician Miguel enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/Rvr68u6k5sI",
         watch: "videos/coco.mp4",
         year: 2017,
         duration: "1h 49m",
@@ -252,7 +252,7 @@ const movies = [
     {
         title: "Sing",
         summary: "In a city of animals, a koala stages a singing competition to save his failing theater.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/9qPgK_u4vX8",
         watch: "videos/sing.mp4",
         year: 2016,
         duration: "1h 48m",
@@ -262,7 +262,7 @@ const movies = [
     {
         title: "Ratatouille",
         summary: "A rat who dreams of becoming a chef makes an unusual alliance with a young kitchen worker at a renowned Parisian restaurant.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/niD-jahC16A",
         watch: "videos/ratatouille.mp4",
         year: 2007,
         duration: "1h 51m",
@@ -272,7 +272,7 @@ const movies = [
     {
         title: "Brave",
         summary: "Determined to make her own path in life, a princess defies a custom that brings chaos to her kingdom.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/TEHWDA_1L0w",
         watch: "videos/brave.mp4",
         year: 2012,
         duration: "1h 33m",
@@ -282,7 +282,7 @@ const movies = [
     {
         title: "Maleficent",
         summary: "A vengeful fairy curses an infant princess but learns that the child may be the key to peace.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/JIIgXEGAZgE",
         watch: "videos/maleficent.mp4",
         year: 2014,
         duration: "1h 37m",
@@ -312,7 +312,7 @@ const movies = [
     {
         title: "Weathering with You",
         summary: "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/Q6iK6DjV_iE",
         watch: "videos/weathering_with_you.mp4",
         year: 2019,
         duration: "1h 52m",
@@ -322,7 +322,7 @@ const movies = [
     {
         title: "Your Name",
         summary: "Two teenagers share a profound, magical connection upon discovering they are swapping bodies.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/xU47nhruN-Q",
         watch: "videos/your_name.mp4",
         year: 2016,
         duration: "1h 46m",
@@ -332,7 +332,7 @@ const movies = [
     {
         title: "Spirited Away",
         summary: "A young girl, Chihiro, becomes trapped in a strange and mysterious world of spirits.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/ByXuk9QqQkk",
         watch: "videos/spirited_away.mp4",
         year: 2001,
         duration: "2h 5m",
@@ -342,7 +342,7 @@ const movies = [
     {
         title: "5 Centimeters Per Second",
         summary: "A tale of two people drifting apart over time but cherishing their memories together.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/wdM7athAem0",
         watch: "videos/5_cm_per_second.mp4",
         year: 2007,
         duration: "1h 3m",
@@ -352,7 +352,7 @@ const movies = [
     {
         title: "Your Lie in April",
         summary: "A piano prodigy who has lost the ability to play after a traumatic experience finds new inspiration through a spirited violinist.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/3aL0gDZtFbE",
         watch: "videos/your_lie_in_april.mp4",
         year: 2016,
         duration: "2h 2m",
@@ -362,7 +362,7 @@ const movies = [
     {
         title: "The Boy and the Heron",
         summary: "A young boy discovers a mysterious tower in a fantastical world while coping with loss and self-discovery.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/t5khm-VjEu4",
         watch: "videos/the_boy_and_the_heron.mp4",
         year: 2023,
         duration: "2h 0m",
@@ -372,7 +372,7 @@ const movies = [
     {
         title: "No Longer Heroine",
         summary: "A romantic comedy exploring the life of a girl who always considered herself the heroine until she faces reality.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/JImBbaP8HHM",
         watch: "videos/no_longer_heroine.mp4",
         year: 2015,
         duration: "1h 52m",
@@ -382,7 +382,7 @@ const movies = [
     {
         title: "Monster",
         summary: "A gripping drama exploring human relationships, misunderstandings, and prejudices from multiple perspectives.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/95ZzKHmFn8Y",
         watch: "videos/monster.mp4",
         year: 2023,
         duration: "2h 5m",
@@ -392,7 +392,7 @@ const movies = [
     {
         title: "The Last 10 Years",
         summary: "A young woman with a terminal illness finds love and decides to live life to its fullest despite her limited time.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/GyMXxOdHF7o",
         watch: "videos/the_last_10_years.mp4",
         year: 2022,
         duration: "2h 4m",
@@ -402,7 +402,7 @@ const movies = [
     {
         title: "My Tomorrow, Your Yesterday",
         summary: "A man falls in love with a woman who is moving backward in time, complicating their relationship.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/hdA7iA32XaA",
         watch: "videos/my_tomorrow_your_yesterday.mp4",
         year: 2016,
         duration: "1h 51m",
@@ -412,7 +412,7 @@ const movies = [
     {
         title: "Like Father, Like Son",
         summary: "Two families discover that their sons were switched at birth and must navigate a complex emotional journey.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/SwASkLF-wYg",
         watch: "videos/like_father_like_son.mp4",
         year: 2013,
         duration: "2h 1m",
@@ -422,7 +422,7 @@ const movies = [
     {
         title: "Journey to the Shore",
         summary: "A grieving widow embarks on a journey with her deceased husband to visit those he loved in life.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/RnIkb6rqkNA",
         watch: "videos/journey_to_the_shore.mp4",
         year: 2015,
         duration: "2h 7m",
@@ -432,7 +432,7 @@ const movies = [
     {
         title: "18x2 Beyond Youthful Day",
         summary: "A romantic story that explores youthful relationships and bittersweet moments of growing up.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/PSuYA5JQV-Y",
         watch: "videos/18x2_beyond_youthful_day.mp4",
         year: 2021,
         duration: "1h 50m",
@@ -442,7 +442,7 @@ const movies = [
     {
         title: "The Parades",
         summary: "A heartfelt drama that uncovers hidden truths about family, tradition, and community during a festive parade.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/qjESIWrsZEU",
         watch: "videos/the_parades.mp4",
         year: 2020,
         duration: "1h 48m",
@@ -452,7 +452,7 @@ const movies = [
     {
         title: "How to Make a Million Before Grandma Dies",
         summary: "A young girl hatches an elaborate plan to earn a fortune before her beloved grandmother passes away.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/HrVX_nHNIUA",
         watch: "videos/how_to_make_a_million.mp4",
         year: 2021,
         duration: "1h 43m",
@@ -462,7 +462,7 @@ const movies = [
     {
         title: "Friendzone",
         summary: "A hilarious and heartwarming story of a man trying to escape the friendzone with the woman he loves.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/LHzwwYcrKks",
         watch: "videos/friendzone.mp4",
         year: 2021,
         duration: "1h 30m",
@@ -472,7 +472,7 @@ const movies = [
     {
         title: "Happy Old Year",
         summary: "A woman trying to declutter her home finds herself revisiting emotional attachments and past memories.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/Qu5aQeh7VT0",
         watch: "videos/happy_old_year.mp4",
         year: 2019,
         duration: "1h 53m",
@@ -482,7 +482,7 @@ const movies = [
     {
         title: "First Love",
         summary: "A crime thriller that intertwines love and tragedy during a night of chaos.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/LLaLWehxJFc",
         watch: "videos/first_love.mp4",
         year: 2019,
         duration: "1h 48m",
@@ -492,7 +492,7 @@ const movies = [
     {
         title: "Brother of the Year",
         summary: "A comedic and heartfelt exploration of sibling relationships, misunderstandings, and love.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/wxgudLt9Cio",
         watch: "videos/brother_of_the_year.mp4",
         year: 2018,
         duration: "2h 0m",
@@ -502,7 +502,7 @@ const movies = [
     {
         title: "You Are the Apple of My Eye",
         summary: "A nostalgic look at first love and the bittersweet moments of growing up.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/3J6yuyjN5Wg",
         watch: "videos/you_are_the_apple.mp4",
         year: 2011,
         duration: "1h 49m",
@@ -512,7 +512,7 @@ const movies = [
     {
         title: "Take Me to the Moon",
         summary: "A struggling musician time travels back to prevent his best friend's untimely death.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/FRU59ofthNE",
         watch: "videos/take_me_to_the_moon.mp4",
         year: 2017,
         duration: "1h 45m",
@@ -522,7 +522,7 @@ const movies = [
     {
         title: "Call Me by Your Name",
         summary: "A summer romance blossoms between a young man and his father's assistant in 1980s Italy.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/Z9AYPxH5NTM",
         watch: "videos/call_me_by_your_name.mp4",
         year: 2017,
         duration: "2h 12m",
@@ -532,7 +532,7 @@ const movies = [
     {
         title: "Our Time",
         summary: "A poignant tale of love, heartbreak, and self-discovery, as two individuals navigate the trials of growing up and the complexities of relationships.",
-        trailer: "",
+        trailer: "https://www.youtube.com/embed/yKNvU7J5cmE",
         watch: "videos/our_time.mp4",
         year: 2023,
         duration: "2h 0m",
