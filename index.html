@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Movie Collection</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Movie Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Global Movie Collection</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="genres.html">Genres</a>
-      <a href="about.html">About</a>
-      <button id="dark-mode-toggle">Toggle Dark Mode</button>
-    </nav>
-  </header>
-  <main>
-    <section class="intro">
-      <h2>Welcome to the Global Movie Collection</h2>
-      <p>Explore movies from around the world, all subtitled in Myanmar!</p>
-    </section>
-    <section class="featured-genres">
-      <h2>Featured Genres</h2>
-      <div id="genre-container"></div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Global Movie Collection</p>
-  </footer>
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <h1 class="logo">Global Movie Collection</h1>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">Home</li>
+                        <li class="menu-list-item">All Movies</li>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search movies...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-container">
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">All Movies</h1>
+                <div class="movie-list" id="all-movies"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Global Movie Collection. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
