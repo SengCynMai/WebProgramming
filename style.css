@@ -1,82 +1,368 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  header nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .intro {
-    margin-bottom: 40px;
-  }
-  
-  .featured-genres .genre-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .featured-genres .genre {
-    text-align: center;
-  }
-  
-  .featured-genres .genre img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 10px 0;
-  }
-  
-  body.dark-mode {
-    background-color: #222;
-    color: #eee;
-  }
-  
-  body.dark-mode header {
-    background-color: #444;
-  }
-  
-  body.dark-mode footer {
-    background-color: #444;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #87CEEB;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: white;
+  font-size: 24px;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-list-item {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-list-item:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  margin-left: auto;
+}
+
+#search-bar {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Main Content */
+.container {
+  padding: 20px;
+}
+
+.movie-list-title {
+  font-size: 24px;
+  color: #007BFF;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-item {
+  position: relative;
+  flex: 0 0 200px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-item:hover {
+  transform: scale(1.05);
+}
+
+.movie-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.movie-item h3 {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.movie-summary {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.movie-item:hover .movie-summary {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  color: black;
+}
+
+.modal-content h2 {
+  color: #007BFF;
+}
+
+.modal-content .trailer-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.modal-content .trailer-link:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* Movie Details Page */
+.movie-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.movie-poster img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie-info {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.movie-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.movie-info p {
+  margin: 5px 0;
+}
+
+/* Trailer Styles */
+.trailer-container {
+  margin-top: 20px;
+}
+
+.trailer {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.watch-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.watch-button:hover {
+  background-color: #0056b3;
+}
+
+.video-player {
+  max-width: 800px; /* Limit the width of the video */
+  margin: 20px auto; /* Center the video player */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure no overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #000; /* Black background during loading */
+}
+
+/* Reviews Section */
+/* Reviews Section */
+.reviews-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0c0d0d;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #cbce80;
+}
+
+#reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between reviews */
+  max-width: 800px; /* Limit the width of the reviews section */
+  margin: 0 auto; /* Center the reviews section */
+}
+
+.review {
+  padding: 10px;
+  background-color: rgb(11, 10, 10);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.review strong {
+  color: #d2d07f; /* Blue for ratings */
+}
+
+/* Show More/Less Button */
+.toggle-reviews-button {
+  display: block;
+  margin: 20px auto 0; /* Center the button below the reviews */
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.toggle-reviews-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Add Review Form */
+.add-review {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h3 {
+  font-size: 20px;
+  color: #dbc879;
+  margin-bottom: 10px;
+}
+
+#review-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: white;
+}
+
+#review-form select,
+#review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+#review-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#review-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #121212;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
